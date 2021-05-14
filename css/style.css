@@ -336,7 +336,9 @@ a {
     .sticky-wrapper .site-navbar ul li.active a {
       color: #fff; }
   .sticky-wrapper.is-sticky .site-navbar {
-    background-color: #007bff; }
+    background-color: #000000a4; 
+    backdrop-filter: blur(10px);
+  }
     .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li {
       display: inline-block;
       padding: 10px 5px; }
@@ -367,12 +369,29 @@ a {
 
 }
 
+.linkedin-icon-effect,.github-icon-effect {
+  font-size: 18px;
+  transition: 0.3s;
+}
+.github-icon-effect:hover {
+  color: #ffd33d;
+}
+.linkedin-icon-effect:hover {
+  color: #007bff;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+
 .main-card {
   background-color: #1d1f3a;
   height: 50%;
   width: 75%;
   border-radius: 5px;
   margin-top: 50px;
-  padding: 80px;
+  padding: 40px;
   font-family: 'Fira Code', monospace;
 }
