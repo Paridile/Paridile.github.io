@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 body {
-  overflow-x: hidden;
+  
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #fff;
   height: 200vh;
@@ -28,8 +28,23 @@ p {
   color: #b3b3b3;
   font-weight: 300; }
 
-  body,html {
+  /* body,html {
     overflow-x: hidden;
+    height: 100%;
+  } */
+
+  body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #414461;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #212529;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0,0,0,.12) 0 3px 13px 1px;
   }
 
 h1, h2, h3, h4, h5, h6,
@@ -155,7 +170,7 @@ a {
           transition: 0s all;
           color: #343a40; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
-            color: #007bff; }
+            color: #5e01d8; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
           color: #fff !important; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
@@ -265,12 +280,12 @@ a {
       position: relative;
       color: #212529; }
       .site-mobile-menu .site-nav-wrap a.active, .site-mobile-menu .site-nav-wrap a:hover {
-        color: #007bff; }
+        color: #5e01d8; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #007bff; }
+        color: #5e01d8; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -340,7 +355,7 @@ a {
     .sticky-wrapper .site-navbar ul li.active a {
       color: #fff; }
   .sticky-wrapper.is-sticky .site-navbar {
-    background-color: #000000c7; 
+    background-color: #353475b9; 
     backdrop-filter: blur(10px);
   }
     .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li {
@@ -381,12 +396,12 @@ a {
   color: #ffd33d;
 }
 .linkedin-icon-effect:hover {
-  color: #007bff;
+  color: #002fff;
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 44px;
 }
 
 
@@ -400,4 +415,59 @@ a {
   margin-top: 50px;
   padding: 40px;
   font-family: 'Fira Code', monospace;
+}
+
+.bg-gray {
+  background-color: #252738; 	
+
+}
+
+.languages {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background-color: #33335a; 	
+  transition:all .3s ease-in-out;
+}
+
+.bg-card {
+  background-color: #414461; 	
+}
+
+.languages-logo {
+  overflow:hidden;
+  transition:all .3s;
+}
+
+.languages-logo:hover {  
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+.lan-c:hover{
+  background-color: #95ade2;
+}
+
+.lan-js:hover {
+  background-color: #e1f870;
+}
+
+.lan-java:hover {
+  background-color: rgb(216, 106, 86);
+}
+
+.lan-html:hover {
+  background-color: #ff9650;
+}
+
+.lan-css:hover {
+  background-color: #0058fcc4;
+}
+
+.lan-sass:hover {
+  background-color: #8a397fc4;
+}
+
+.lan-csharp:hover {
+  background-color: #83289ec4;
 }
