@@ -7,9 +7,9 @@ body {
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #fff;  
   position: relative; }
-  body:before {
+  body:before {    
     content: "";
-    position: absolute;
+    position: absolute;    
     top: 0;
     left: 0;
     right: 0;
@@ -34,7 +34,6 @@ p {
     overflow-x: hidden;
     height: 100%;
   } */
-
   body::-webkit-scrollbar {
     width: 6px;
     background-color: #414461;
@@ -160,7 +159,7 @@ a {
             pointer-events: none; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
             border-color: rgba(136, 183, 213, 0);
-            border-bottom-color: #fff;
+            border-bottom-color: #252738;
             border-width: 10px;
             margin-left: -10px; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown a {
@@ -170,7 +169,7 @@ a {
           -webkit-transition: 0s all;
           -o-transition: 0s all;
           transition: 0s all;
-          color: #343a40; }
+          color: #e6e6e6f6; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
             color: #b098ce; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
@@ -190,7 +189,7 @@ a {
             padding: 9px 20px;
             display: block; }
             .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
-              background: #101118;
+              background: #33335a;
               color: #f1f1f1; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
             content: "\e315";
@@ -265,7 +264,7 @@ a {
         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
           text-decoration: none; }
   .site-mobile-menu .site-mobile-menu-body {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     -webkit-overflow-scrolling: touch;
     position: relative;
     padding: 20px;
@@ -290,6 +289,7 @@ a {
         color: #aa97ff; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
+      color: #fff;
       right: 0px;
       top: 10px;
       z-index: 20;
@@ -371,7 +371,7 @@ a {
         padding-right: 20px; }
       .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 10px;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgb(255, 255, 255);
         font-size: 15px; }
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #fff !important; }
@@ -424,6 +424,10 @@ a {
 	pointer-events: none;
 	cursor: default;
 	
+  }
+
+  .contacto {    
+    cursor: pointer;
   }
 
 .bg-gray {

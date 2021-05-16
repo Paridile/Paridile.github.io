@@ -4813,7 +4813,7 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-light .navbar-text a {
+.navbar-light .navbar-text a,p {
   color: rgba(0, 0, 0, 0.9);
 }
 

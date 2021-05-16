@@ -19,12 +19,17 @@ $(function() {
       $('.site-mobile-menu .has-children').each(function(){
         var $this = $(this);
         
-        $this.prepend('<span class="arrow-collapse collapsed">');
+        $this.prepend('<span class="arrow-collapse collapsed contacto">');
 
         $this.find('.arrow-collapse').attr({
           'data-toggle' : 'collapse',
           'data-target' : '#collapseItem' + counter,
         });
+		$this.find('.contacto').attr({
+			'data-toggle' : 'collapse',
+			'data-target' : '#collapseItem' + counter,
+		  });
+  
 
         $this.find('> ul').attr({
           'class' : 'collapse',
@@ -44,9 +49,19 @@ $(function() {
       } else {
         $this.addClass('active');
       }
-      e.preventDefault();  
-      
+      e.preventDefault();        
     });
+
+	$('body').on('click', '.contacto', function(e) {
+		var $this = $(this);
+		if ( $this.closest('li').find('.collapse').hasClass('show') ) {
+		  $this.removeClass('active');
+		} else {
+		  $this.addClass('active');
+		}
+		e.preventDefault();        
+	  });
+
 
 		$(window).resize(function() {
 			var $this = $(this),
