@@ -464,6 +464,10 @@ a {
   background-color: #e1f870;
 }
 
+.lan-cplus:hover {
+  background-color: #1e3669e8;
+}
+
 .lan-java:hover {
   background-color: rgb(216, 106, 86);
 }
@@ -473,7 +477,7 @@ a {
 }
 
 .lan-css:hover {
-  background-color: #0058fcc4;
+  background-color: #1b4ba3c4;
 }
 
 .lan-sass:hover {
@@ -484,6 +488,18 @@ a {
   background-color: #83289ec4;
 }
 
-.nav-element {
-  color: #05ffa1;
+.lan-php:hover {
+  background-color: #7061c7c4;
+}
+
+.lan-bash:hover {
+  background-color: #090a25c4;
+}
+
+.lan-sql:hover {
+  background-color: #082d4be8;
+}
+
+.lan-typescript:hover {
+  background-color: #285a83e8;
 }
