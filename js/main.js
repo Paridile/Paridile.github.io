@@ -96,6 +96,8 @@ $(function() {
 				}
 	    }
 		});
+
+
 	}; 
 
 	$('.cursor').text(function() {
