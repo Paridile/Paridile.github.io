@@ -441,6 +441,25 @@ a {
   background-color: #252738; 	
 }
 
+.bg-gray-2 {
+  background-color: #363852;
+} 
+
+.title-color {
+  color: aqua;
+}
+
+.text-green {
+  color: #05ffa1;
+}
+/* 271d31 */
+
+.foto {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
 .languages {
   height: 160px;
   width: 160px;
@@ -509,4 +528,40 @@ a {
 
 .lan-typescript:hover {
   background-color: #285a83e8;
+}
+
+.boton-contacto {
+  border: 2px solid #03c279;
+  background-color: transparent;
+  font-weight: bold;
+  color: #03c279;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 7%;
+  cursor: pointer;
+}
+
+.blur {
+  backdrop-filter: blur(20px);
+  background-color: #03c27918;
+}
+
+.boton-contacto:hover {
+  background-color: #03c279;
+  color: white;
+  z-index: 100;
+}
+
+.boton-contacto:active {
+  border: none;
+  transform: scale(0.98);
+}
+
+.footer {
+  background-color: #16141b;
+  color: #f1f1f1;
+}
+
+.no-resize {
+  resize: none;
 }

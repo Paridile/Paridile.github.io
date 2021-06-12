@@ -1,9 +1,11 @@
+
+
 $(function() {
 
   var siteSticky = function() {
 		$(".js-sticky-header").sticky({topSpacing:0});
 	};
-	siteSticky();
+	siteSticky(); 
 
 	var siteMenuClone = function() {
 
@@ -34,7 +36,7 @@ $(function() {
         $this.find('> ul').attr({
           'class' : 'collapse',
           'id' : 'collapseItem' + counter,
-        });
+        }); 
 
         counter++;
 
@@ -141,5 +143,33 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         content.html($(this).html());
         $(".modal-profile").modal({show:true});
     });
-
+	
   });
+
+  $(document).ready(function(){
+  
+	$('.owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		autoplay:true,
+		autoplayTimeout:3000,
+		autoplayHoverPause:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
+			}
+		}
+	})
+	});
+
+
+	$(document).ready(function() {
+		$("#formulario").validate();
+	  });
