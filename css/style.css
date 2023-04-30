@@ -452,6 +452,9 @@ a {
 .text-green {
   color: #05ffa1;
 }
+.text-green:hover {
+  color: gold;
+}
 /* 271d31 */
 
 .foto {
@@ -517,6 +520,19 @@ a {
 .lan-php:hover {
   background-color: #7061c7c4;
 }
+
+.lan-oracle:hover {
+  background-color: #9b3e3ec4;
+}
+
+.lan-mongo:hover {
+  background-color: #357548c4;
+}
+
+.lan-elastic:hover {
+  background-color: #9db853c4;
+}
+
 
 .lan-bash:hover {
   background-color: #090a25c4;
