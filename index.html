@@ -1,404 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<html lang="en" class="scroll-smooth">
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport" 
-      content="width=device-width, initial-scale=1,minimum-scale=1, shrink-to-fit=no"
-    />
-    <link rel="icon" type="icon" href="./images/favicon.ico"/>
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pablo Ríos Díaz | Computer Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-    
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-    <title>Pablo Ríos Díaz</title>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close pt-3">
-          
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">
+            <img src="./images/logo.png" alt="Logo" style="height:25px;width:auto;object-fit:contain;vertical-align:middle;margin-right:0.5rem;">Pablo<span>RíosDíaz</span>.
+        </a>
+        <div class="nav-links">
+            <a href="#award">Awards</a>
+            <a href="#stack">Stack</a>
+            <a href="#tools">Tools</a>
+            <a href="#contact" class="nav-cta">Contact</a>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
+    </nav>
 
-    <div class="site-navbar-wrap">
-      <div class="site-navbar-top">
-        <div class="container py-3">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <div class="d-flex mr-auto">
-              </div>
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-inner">
+            <div class="hero-badge">Available for new projects</div>
+            <h1 class="hero-name">Pablo Ríos Díaz</h1>
+            <div class="hero-title">Computer Engineer</div>
+            <p class="hero-desc">
+                I build <strong>scalable systems</strong> and clean architectures. Passionate about performance engineering, distributed systems, and turning complex technical challenges into elegant, maintainable software.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://github.com/paridile" target="_blank" class="btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/josé-pablo-ríos-díaz-de-león-571953211/" target="_blank" class="btn-ghost"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
-            <div class="col-6 text-right">
-              <div class="mr-auto">
-                <a target=”_blank”  href="https://www.linkedin.com/in/josé-pablo-ríos-díaz-de-león-571953211/" class="p-2 pl-0 linkedin-icon-effect" 
-                  ><span class="icon-linkedin " ></span
-                ></a>
-                <a target=”_blank” href="https://www.github.com/paridile" class="p-2 pl-0 github-icon-effect">
-                  <span class="icon-github "></span>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="site-navbar site-navbar-target js-sticky-header sticky-top">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-2">
-              <a href="#">
-                <img src="./images/logo.png" alt="logo" class="logo pt-1">
-              </a>
-            </div>
-            <div class="col-10">
-              <nav class="site-navigation text-right" role="navigation">
-                <div class="container">
-                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-                    <a
-                      href="#"
-                      class="site-menu-toggle js-menu-toggle text-white"
-                      ><span class="icon-menu h3"></span
-                    ></a>
-                  </div>
-                  <ul
-                    class="site-menu main-menu js-clone-nav d-none d-lg-block"
-                  >
-                    <li class="active">
-                      <a href="#" class="nav-link">Welcome</a>
-                    </li>
-                    <li class="has-children">                      
-                      <a  class="nav-link contacto">Social Media</a>                    
-                      <ul class="dropdown arrow-top">
-                        <li><a href="mailto:pablorios1603@gmail.com?subject=Contacto" class="nav-link">Email</a></li>
-                        <li><a target=”_blank”  href="https://www.github.com/paridile" class="nav-link">Github</a></li>
-                        <li><a target=”_blank”  href="https://www.linkedin.com/in/josé-pablo-ríos-díaz-de-león-571953211/" class="nav-link">Linkedin</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#acerca-de" class="nav-link">About me</a>
-                    </li>
-                    <li>
-                      <a href="#lenguajes" class="nav-link">Skills</a>
-                    </li>
-                    <li><a href="#herramientas" class="nav-link">Tools</a></li>                    
-                    <li>
-                      <a href="#contacto" class="nav-link">Contact me</a>
-                    </li>
-
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+            Scroll
         </div>
-      </div>
-    </div>
-
-    <div class="main-background m-0 p-0 vh-100">
-      <div class="row h-100 m-0">
-        <div class="col-md-6 d-md-block d-none col-12 text-white">
-          <div class="vh-100 row m-0 justify-content-center align-items-center">
-            <div class="main-card" >
-              <span style="color: aqua;"> > </span> ¡Welcome! <br>
-              <span style="color: aqua;"> > </span>
-              Fell free to send me an email
-              to <span style="color: #05ffa1;"> pablorios1603@gmail.com </span>
-              to get in touch <br>
-              <span style="color: aqua;"> > </span>
-              Also, you can <br> click  <a href="mailto:pablorios1603@gmail.com?subject=Contacto" class="aqui">here</a><span class="cursor" style="color: aqua;">|</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 text-white">
-          <div class="vh-100 row p-0 m-0 justify-content-center align-items-center">
-            <div class="col-auto p-5 text-center">
-              <p class="h4">Hi, I´m</p>
-              <h1 class="display-3 text-white">Pablo Ríos Díaz</h1>
-              <p class="h3 text-white">
-                Computer science engineer <br>
-              </p>   
-              <div class="pt-3">
-                <a href="#contacto">
-                  <button class="blur boton-contacto" >Contact me</button>
-                </a>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section id="acerca-de" class="container-fluid bg-gray-2">
-      <h2 class=" display-4 text-center title-color pt-5 pb-3 m-0">About me</h2>
-      <div class="container pb-5">
-        <div class="text-center pb-3">
-          <img src="./images/foto.png" class="foto float-none  p-3" alt="">
-        </div>
-        <p class="text-white m-0 lead text-justify">I studied computer engineering at the <a class="text-green" target=”_blank” href="https://www.uaemex.mx/"> Autonomous Mexico State University (UAEMex) </a> and I was the student with the most outstanding academic trajectory of my generation.</p>
-        
-        <p class="text-white m-0 lead text-justify pt-3">I enjoy creating solutions to all kinds of areas of opportunity through programming, whether it's developing desktop, web, or mobile applications. I have a great ability to solve problems in an analytical and creative way.</p>                
-      </div>
-    </section>
-    
-    <div id="lenguajes" class="container-fluid bg-gray pt-5">
-      <h2 class="display-4 text-center pb-5 title-color">Skills</h2>
-     <div class="row w-100 text-center mr-auto ml-auto">
-
-      <div class="col-12  col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-c d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://devdocs.io/c/"><img src="./images/c.png" class="languages-logo" style="height: 128px; width: 128px;" alt="Lenguaje C" title="Lenguaje C"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-js d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="./images/js.png" class="languages-logo" style="height: 110px; width: 90px;" alt="Javascript" title="Javascript"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-java d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://docs.oracle.com/en/java/"><img src="./images/java.png" class="languages-logo" alt="Java" title="Java"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-cplus d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://devdocs.io/cpp/"><img src="./images/cplus.png" class="languages-logo"style="height: 128px; width: 100;" alt="C++" title="C++"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-html d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="./images/html.png" class="languages-logo" style="height: 110px; width: 100px;" alt="HTML5" title="HTML5"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-css d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="./images/css.png" class="languages-logo"style="height: 110px; width: 100px;" alt="CSS3" title="CSS3"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-sass d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://sass-lang.com/documentation/"><img src="./images/sass.png" class="languages-logo"style="height: 100px; width: 120px;" alt="Sass" title="Sass"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-csharp d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://www.w3schools.com/cs/index.php"><img src="./images/csharp.png" class="languages-logo"style="height: 128px; width: 120px;"  alt="C#" title="C#"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-php d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://www.php.net/docs.php"><img src="./images/php.png" class="languages-logo"style="height: 120px; width: 120px;" alt="php" title="php"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-bash d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://devdocs.io/bash/"><img src="./images/bash.png" class="languages-logo"style="height: 110px; width: 110px;" alt="Bash script" title="Bash script"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-sql d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://dev.mysql.com/doc/"><img src="./images/mysql.png" class="languages-logo"style="height: 80px; width: 120px;"  alt="MySQL" title="MySQL"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-typescript d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://www.typescriptlang.org/docs/"><img src="./images/typescript.png" class="languages-logo"style="height: 90px; width: 90px;"  alt="Typescript" title="Typescript"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-oracle d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://docs.oracle.com/en/database/"><img src="./images/oracle.png" class="languages-logo"style="height: 120px; width: 120px;" alt="oracle" title="Oracle"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-mongo d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://www.mongodb.com/docs/"><img src="./images/mongo.png" class="languages-logo"style="height: 110px; width: 110px;" alt="MongoDB" title="MongoDB"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
-        <div class="card bg-card text-center w-100" style="width: 18rem;">        
-          <div class="card-body text-center py-5 d-flex align-items-center justify-content-center">
-            <div class="languages lan-elastic d-flex align-items-center justify-content-center">
-              <a target="_blank" href="https://www.elastic.co/guide/index.html"><img src="./images/elastic.png" class="languages-logo"style="height: 120px; width: 120px;" alt="ElasticSearch" title="ElasticSearch"></a>
-            </div>           
-          </div>
-        </div>
-      </div>
-
-     </div>
-    </div>
-
-    <section id="herramientas" class="container-fluid bg-gray-2">
-      <div class="text-center p-5">
-        <h2 class="display-4 title-color">Tools</h2>
-      </div>     
-      <div class="owl-carousel bg-gray-2 py-5">
-        <a target="_blank" href="https://docs.spring.io/spring-framework/docs/current/reference/html/"><div class="item"><img src="./images/spring.png" alt="spring-framework" title="Spring framework"></div></a>
-        <a target="_blank" href="https://code.visualstudio.com/docs"><div class="item"><img src="./images/vscode.png" alt="Vscode" title="Vscode"></div></a>
-        <a target="_blank" href="https://learn.microsoft.com/en-us/visualstudio/windows/?view=vs-2022"><div class="item"><img src="./images/visualstudio.png" alt="Visualstudio" title="Visualstudio"></div></a>
-        <a target="_blank" href="https://netbeans.apache.org/"><div class="item"><img src="./images/netbeans.png" alt="Netbeans" title="Netbeans"></div></a>
-        <a target="_blank" href="https://www.jetbrains.com/es-es/idea/"><div class="item"><img src="./images/intellij.png" alt="Intellij" title="Intellij"></div></a>
-        <a target="_blank" href="https://www.jetbrains.com/datagrip/?source=google&medium=cpc&campaign=15034927882&term=datagrip&content=555122603991&gad=1&gclid=EAIaIQobChMIsJ3Pot_S_gIVsDKtBh1SFA6ZEAAYASAAEgL-T_D_BwE"><div class="item"><img src="./images/datagrip.png" alt="Datagrip" title="Datagrip"></div></a>
-        <a target="_blank" href="https://www.jetbrains.com/es-es/clion/"><div class="item"><img src="./images/clion.png" alt="Clion" title="Clion"></div></a>
-        <a target="_blank" href="https://www.codeblocks.org/"><div class="item"><img src="./images/codeblocks.png" alt="Codeblocks" title="Codeblocks"></div></a>
-        <a target="_blank" href="https://www.arduino.cc/"><div class="item"><img src="./images/arduino.png" alt="Arduino" title="Arduino"></div></a>
-        <a target="_blank" href="https://www.mysql.com/products/workbench/"><div class="item"><img src="./images/workbench.jpg" alt="Workbench" title="Workbench"></div></a>
-        <a target="_blank" href="https://angular.io/"><div class="item"><img src="./images/angular.png" alt="Angular" title="Angular"></div></a>
-        <a target="_blank" href="https://vuejs.org/"><div class="item"><img src="./images/vue.png" alt="Vue" title="Vue"></div>   </a>
-        <a target="_blank" href="https://quasar.dev/docs"><div class="item"><img src="./images/quasar.png" alt="Quasar" title="Quasar"></div>     </a>
-        <a target="_blank" href="https://jquery.com/"><div class="item"><img src="./images/jquery.png" alt="Jquery" title="Jquery"></div></a>
-        <a target="_blank" href="https://tailwindcss.com/"><div class="item"><img src="./images/tailwind.png" alt="Tailwind" title="Tailwind"></div></a>
-        <a target="_blank" href="https://getbootstrap.com/"><div class="item"><img src="./images/bootstrap.png" alt="Bootstrap" title="Bootstrap"></div></a>
-    </div> 
     </section>
 
-    <section id="contacto" class="container-fluid bg-gray pb-5">
-      <div class="text-center py-5">
-        <h2 class="title-color display-4">Contact me</h2>
-      </div>
-      <div class="container bg-gray-2 py-5">        
-          <div class="row">
-            <div class="col-12 col-md-3">
+    <section id="award" style="padding: 5rem 2.5rem;">
+        <div class="section-inner">
+            <div class="award-card reveal">
+                <div class="award-icon">&#127942;</div>
+                <div>
+                    <div class="award-title">Academic Excellence Award</div>
+                    <p class="award-desc">
+                        Recognized as the student with the <strong>most outstanding academic trajectory</strong> of the generation at the Autonomous Mexico State University (UAEMex).
+                    </p>
+                </div>
+                <div class="award-badge">#1</div>
             </div>
-            <div class="col-12 col-md-6">              
-              <form 
-              id="formulario"
-              action="https://formspree.io/f/xrgrkpgv"
-              name="formulario"
-              method="POST"
-              onsubmit="return validar(this)"
-              >
-                <div class="pb-3">
-                  <label for="email" class="form-label text-white">Email</label>
-                  <input type="email" 
-                  name="email"
-                  required
-                  minlength="5"
-                  class="form-control" id="email" aria-describedby="email" placeholder="Write here your email">
-                </div>
-                <div class="pb-5">
-                  <label for="asunto" class="form-label text-white">Subject</label>
-                  <input type="text" 
-                  name="asunto"
-                  required
-                  minlength="1"
-                  class="form-control" id="asunto"
-                  placeholder="Write here the subject">
-                  
-                </div>
-                <div class="pb-3 ">            
-                  <textarea class="form-control w-100 no-resize" 
-                  name="mensaje"
-                  required
-                  minlength="1"
-                  id="mensaje" rows="8" placeholder="Write here your message..."></textarea>
-                </div>
-                <div class="text-center pt-3">
-                  <button type="submit" class="boton-contacto">Send</button>
-                </div>
-              </form>
-            </div>
-            <div class="col-12 col-md-3">
-            </div>
-          </div>
-      </div>
+        </div>
     </section>
 
-    <footer class="container-fluid footer">
-      <div class="py-5 text-center">
-        <p class="lead">2021-2025 &copy; Pablo Ríos Díaz</p>
-      </div>
+    <section id="stack">
+        <div class="section-inner">
+            <div class="section-label reveal">Technical Proficiency</div>
+            <h2 class="section-heading reveal reveal-delay-1" style="margin-bottom: 3rem;">My Engineering Stack</h2>
 
+            <div class="stack-grid">
+
+                <div class="stack-panel reveal">
+                    <div class="stack-panel-head">
+                        <div class="stack-panel-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div>
+                            <div class="stack-panel-title">Core &amp; Backend</div>
+                            <div class="stack-panel-subtitle">Systems &amp; server-side</div>
+                        </div>
+                    </div>
+                    <div class="skill-grid">
+                        <span class="skill-pill"><span class="dot dot-blue"></span>C</span>
+                        <span class="skill-pill"><span class="dot dot-blue"></span>C++</span>
+                        <span class="skill-pill"><span class="dot dot-orange"></span>Java</span>
+                        <span class="skill-pill"><span class="dot dot-green"></span>Bash</span>
+                    </div>
+                </div>
+
+                <div class="stack-panel reveal reveal-delay-1">
+                    <div class="stack-panel-head">
+                        <div class="stack-panel-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div>
+                            <div class="stack-panel-title">Web Technologies</div>
+                            <div class="stack-panel-subtitle">Frontend &amp; web stack</div>
+                        </div>
+                    </div>
+                    <div class="skill-grid">
+                        <span class="skill-pill"><span class="dot dot-yellow"></span>JavaScript</span>
+                        <span class="skill-pill"><span class="dot dot-blue"></span>TypeScript</span>
+                        <span class="skill-pill"><span class="dot dot-orange"></span>HTML5</span>
+                        <span class="skill-pill"><span class="dot dot-blue"></span>CSS3</span>
+                        <span class="skill-pill"><span class="dot dot-pink"></span>Sass</span>
+                        <span class="skill-pill"><span class="dot dot-green"></span>Vue.js</span>
+                    </div>
+                </div>
+
+                <div class="stack-panel reveal">
+                    <div class="stack-panel-head">
+                        <div class="stack-panel-icon"><i class="fa-solid fa-database"></i></div>
+                        <div>
+                            <div class="stack-panel-title">Databases</div>
+                            <div class="stack-panel-subtitle">Storage &amp; search</div>
+                        </div>
+                    </div>
+                    <div class="skill-grid">
+                        <span class="skill-pill"><span class="dot dot-blue"></span>MySQL</span>
+                        <span class="skill-pill"><span class="dot dot-red"></span>Oracle</span>
+                        <span class="skill-pill"><span class="dot dot-green"></span>MongoDB</span>
+                        <span class="skill-pill"><span class="dot dot-yellow"></span>Elasticsearch</span>
+                        <span class="skill-pill"><span class="dot dot-blue"></span>PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="stack-panel reveal reveal-delay-1">
+                    <div class="stack-panel-head">
+                        <div class="stack-panel-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div>
+                            <div class="stack-panel-title">DevOps &amp; Cloud</div>
+                            <div class="stack-panel-subtitle">Infrastructure &amp; deployment</div>
+                        </div>
+                    </div>
+                    <div class="skill-grid">
+                        <span class="skill-pill"><span class="dot dot-blue"></span>Docker</span>
+                        <span class="skill-pill"><span class="dot dot-blue"></span>Kubernetes</span>
+                        <span class="skill-pill"><span class="dot dot-orange"></span>AWS</span>
+                        <span class="skill-pill"><span class="dot dot-green"></span>CI/CD</span>
+                        <span class="skill-pill"><span class="dot dot-white"></span>Git</span>
+                        <span class="skill-pill"><span class="dot dot-white"></span>GitHub Actions</span>
+                        <span class="skill-pill"><span class="dot dot-orange"></span>Linux</span>
+                        <span class="skill-pill"><span class="dot dot-purple"></span>Terraform</span>
+                    </div>
+                </div>
+
+                <div class="stack-panel wide reveal">
+                    <div class="stack-panel-head">
+                        <div class="stack-panel-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div>
+                            <div class="stack-panel-title">Frameworks &amp; Libraries</div>
+                            <div class="stack-panel-subtitle">Productivity toolbelt</div>
+                        </div>
+                    </div>
+                    <div class="skill-grid">
+                        <span class="skill-pill"><span class="dot dot-green"></span>Spring Framework</span>
+                        <span class="skill-pill"><span class="dot dot-accent"></span>Tailwind CSS</span>
+                        <span class="skill-pill"><span class="dot dot-purple"></span>Bootstrap</span>
+                        <span class="skill-pill"><span class="dot dot-blue"></span>Quasar</span>
+                        <span class="skill-pill"><span class="dot dot-yellow"></span>jQuery</span>
+                        <span class="skill-pill"><span class="dot dot-pink"></span>GraphQL</span>
+                        <span class="skill-pill"><span class="dot dot-white"></span>REST APIs</span>
+                        <span class="skill-pill"><span class="dot dot-purple"></span>WebSockets</span>
+                        <span class="skill-pill"><span class="dot dot-blue"></span>gRPC</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <div class="marquee-label">Development Environment</div>
+        <div style="overflow: hidden;">
+            <div class="marquee-track">
+                <div class="tool-item"><i class="fa-solid fa-code"></i> VS Code</div>
+                <div class="tool-item"><i class="fa-brands fa-java"></i> IntelliJ IDEA</div>
+                <div class="tool-item"><i class="fa-solid fa-c"></i> CLion</div>
+                <div class="tool-item"><i class="fa-solid fa-database"></i> DataGrip</div>
+                <div class="tool-item"><i class="fa-solid fa-window-maximize"></i> Visual Studio</div>
+                <div class="tool-item"><i class="fa-brands fa-docker"></i> Docker Desktop</div>
+                <div class="tool-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+                <div class="tool-item"><i class="fa-solid fa-terminal"></i> Warp Terminal</div>
+                <div class="tool-item"><i class="fa-solid fa-network-wired"></i> Postman</div>
+                <div class="tool-item"><i class="fa-solid fa-pen-nib"></i> Figma</div>
+                <div class="tool-item"><i class="fa-brands fa-linux"></i> Linux</div>
+                <div class="tool-item"><i class="fa-solid fa-database"></i> MySQL Workbench</div>
+                <div class="tool-item"><i class="fa-solid fa-robot"></i> GitHub Copilot</div>
+                <div class="tool-item"><i class="fa-solid fa-code"></i> VS Code</div>
+                <div class="tool-item"><i class="fa-brands fa-java"></i> IntelliJ IDEA</div>
+                <div class="tool-item"><i class="fa-solid fa-c"></i> CLion</div>
+                <div class="tool-item"><i class="fa-solid fa-database"></i> DataGrip</div>
+                <div class="tool-item"><i class="fa-solid fa-window-maximize"></i> Visual Studio</div>
+                <div class="tool-item"><i class="fa-brands fa-docker"></i> Docker Desktop</div>
+                <div class="tool-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+                <div class="tool-item"><i class="fa-solid fa-terminal"></i> Warp Terminal</div>
+                <div class="tool-item"><i class="fa-solid fa-network-wired"></i> Postman</div>
+                <div class="tool-item"><i class="fa-solid fa-pen-nib"></i> Figma</div>
+                <div class="tool-item"><i class="fa-brands fa-linux"></i> Linux</div>
+                <div class="tool-item"><i class="fa-solid fa-database"></i> MySQL Workbench</div>
+                <div class="tool-item"><i class="fa-solid fa-robot"></i> GitHub Copilot</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-inner">
+            <div class="contact-layout">
+                <div class="reveal">
+                    <div class="section-label">Get in touch</div>
+                    <h2 class="contact-info-title">Let's build something <span>great</span> together</h2>
+                    <p class="contact-info-desc">Have a project in mind? Looking for a collaborator? Or just want to connect? My inbox is always open.</p>
+                    <a href="mailto:pablorios1603@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i> pablorios1603@gmail.com
+                    </a>
+                    <a href="https://github.com/paridile" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-github"></i> github.com/paridile
+                    </a>
+                    <a href="https://www.linkedin.com/in/josé-pablo-ríos-díaz-de-león-571953211/" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+                    </a>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <form action="https://formspree.io/f/xrgrkpgv" method="POST">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" name="asunto" required placeholder="Project proposal">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="mensaje" required placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span class="copy">&copy; 2021&ndash;2026 Pablo Ríos Díaz. All rights reserved.</span>
+        <div class="social-row">
+            <a href="https://github.com/paridile" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/josé-pablo-ríos-díaz-de-león-571953211/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:pablorios1603@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
     </footer>
 
-
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>    
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
+</body>
 </html>
