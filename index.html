@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" data-theme="dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,36 +14,51 @@
 <body>
 
     <nav id="navbar">
-      <a href="#hero" class="nav-logo">
+        <a href="#hero" class="nav-logo">
             <img src="./images/logo.png" alt="Logo" style="height:20px;width:auto;object-fit:contain;vertical-align:middle;margin-right:0.5rem;">Pablo<span>RíosDíaz</span>.
         </a>
         <div class="nav-links">
-            <a href="#award">Awards</a>
-            <a href="#stack">Stack</a>
-            <a href="#tools">Tools</a>
-            <a href="#contact" class="nav-cta">Contact</a>
+            <a href="#award" data-i18n="nav.awards">Awards</a>
+            <a href="#stack" data-i18n="nav.stack">Stack</a>
+            <a href="#tools" data-i18n="nav.tools">Tools</a>
+            <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
         </div>
+
+        <!-- Language selector -->
+        <div id="lang-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+
+        <!-- Theme toggle -->
+        <button id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+            <i class="fa-solid fa-sun" id="theme-icon-sun"></i>
+            <i class="fa-solid fa-moon" id="theme-icon-moon"></i>
+        </button>
     </nav>
 
     <section id="hero">
         <div class="hero-bg"></div>
         <div class="hero-grid"></div>
         <div class="hero-inner">
-            <div class="hero-badge">Available for new projects</div>
+            <div class="hero-badge" data-i18n="hero.badge">Available for new projects</div>
             <h1 class="hero-name">Pablo Ríos Díaz</h1>
-            <div class="hero-title">Computer Engineer</div>
-            <p class="hero-desc">
+            <div class="hero-title" data-i18n="hero.title">Computer Engineer</div>
+            <p class="hero-desc" data-i18n="hero.desc">
                 I build <strong>scalable systems</strong> and clean architectures. Passionate about performance engineering, distributed systems, and turning complex technical challenges into elegant, maintainable software.
             </p>
             <div class="hero-actions">
-                <a href="#contact" class="btn-primary">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn-primary" data-i18n="hero.cta">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a>
                 <a href="https://github.com/paridile" target="_blank" class="btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
                 <a href="https://www.linkedin.com/in/pablo-rios-diaz/" target="_blank" class="btn-ghost"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
         <div class="hero-scroll">
             <div class="hero-scroll-line"></div>
-            Scroll
+            <span data-i18n="hero.scroll">Scroll</span>
         </div>
     </section>
 
@@ -52,8 +67,8 @@
             <div class="award-card reveal">
                 <div class="award-icon">&#127942;</div>
                 <div>
-                    <div class="award-title">Academic Excellence Award</div>
-                    <p class="award-desc">
+                    <div class="award-title" data-i18n="award.title">Academic Excellence Award</div>
+                    <p class="award-desc" data-i18n="award.desc">
                         Recognized as the student with the <strong>most outstanding academic trajectory</strong> of the generation at the Autonomous Mexico State University (UAEMex).
                     </p>
                 </div>
@@ -64,8 +79,8 @@
 
     <section id="stack">
         <div class="section-inner">
-            <div class="section-label reveal">Technical Proficiency</div>
-            <h2 class="section-heading reveal reveal-delay-1" style="margin-bottom: 3rem;">My Engineering Stack</h2>
+            <div class="section-label reveal" data-i18n="stack.label">Technical Proficiency</div>
+            <h2 class="section-heading reveal reveal-delay-1" style="margin-bottom: 3rem;" data-i18n="stack.heading">My Engineering Stack</h2>
 
             <div class="stack-grid">
 
@@ -73,8 +88,8 @@
                     <div class="stack-panel-head">
                         <div class="stack-panel-icon"><i class="fa-solid fa-microchip"></i></div>
                         <div>
-                            <div class="stack-panel-title">Core &amp; Backend</div>
-                            <div class="stack-panel-subtitle">Systems &amp; server-side</div>
+                            <div class="stack-panel-title" data-i18n="stack.core.title">Core &amp; Backend</div>
+                            <div class="stack-panel-subtitle" data-i18n="stack.core.sub">Systems &amp; server-side</div>
                         </div>
                     </div>
                     <div class="skill-grid">
@@ -89,8 +104,8 @@
                     <div class="stack-panel-head">
                         <div class="stack-panel-icon"><i class="fa-solid fa-globe"></i></div>
                         <div>
-                            <div class="stack-panel-title">Web Technologies</div>
-                            <div class="stack-panel-subtitle">Frontend &amp; web stack</div>
+                            <div class="stack-panel-title" data-i18n="stack.web.title">Web Technologies</div>
+                            <div class="stack-panel-subtitle" data-i18n="stack.web.sub">Frontend &amp; web stack</div>
                         </div>
                     </div>
                     <div class="skill-grid">
@@ -107,8 +122,8 @@
                     <div class="stack-panel-head">
                         <div class="stack-panel-icon"><i class="fa-solid fa-database"></i></div>
                         <div>
-                            <div class="stack-panel-title">Databases</div>
-                            <div class="stack-panel-subtitle">Storage &amp; search</div>
+                            <div class="stack-panel-title" data-i18n="stack.db.title">Databases</div>
+                            <div class="stack-panel-subtitle" data-i18n="stack.db.sub">Storage &amp; search</div>
                         </div>
                     </div>
                     <div class="skill-grid">
@@ -124,8 +139,8 @@
                     <div class="stack-panel-head">
                         <div class="stack-panel-icon"><i class="fa-solid fa-cloud"></i></div>
                         <div>
-                            <div class="stack-panel-title">DevOps &amp; Cloud</div>
-                            <div class="stack-panel-subtitle">Infrastructure &amp; deployment</div>
+                            <div class="stack-panel-title" data-i18n="stack.devops.title">DevOps &amp; Cloud</div>
+                            <div class="stack-panel-subtitle" data-i18n="stack.devops.sub">Infrastructure &amp; deployment</div>
                         </div>
                     </div>
                     <div class="skill-grid">
@@ -144,8 +159,8 @@
                     <div class="stack-panel-head">
                         <div class="stack-panel-icon"><i class="fa-solid fa-layer-group"></i></div>
                         <div>
-                            <div class="stack-panel-title">Frameworks &amp; Libraries</div>
-                            <div class="stack-panel-subtitle">Productivity toolbelt</div>
+                            <div class="stack-panel-title" data-i18n="stack.fw.title">Frameworks &amp; Libraries</div>
+                            <div class="stack-panel-subtitle" data-i18n="stack.fw.sub">Productivity toolbelt</div>
                         </div>
                     </div>
                     <div class="skill-grid">
@@ -166,7 +181,7 @@
     </section>
 
     <section id="tools">
-        <div class="marquee-label">Development Environment</div>
+        <div class="marquee-label" data-i18n="tools.label">Development Environment</div>
         <div style="overflow: hidden;">
             <div class="marquee-track">
                 <div class="tool-item"><i class="fa-solid fa-code"></i> VS Code</div>
@@ -203,9 +218,9 @@
         <div class="section-inner">
             <div class="contact-layout">
                 <div class="reveal">
-                    <div class="section-label">Get in touch</div>
-                    <h2 class="contact-info-title">Let's build something <span>great</span> together</h2>
-                    <p class="contact-info-desc">Have a project in mind? Looking for a collaborator? Or just want to connect? My inbox is always open.</p>
+                    <div class="section-label" data-i18n="contact.label">Get in touch</div>
+                    <h2 class="contact-info-title" data-i18n="contact.title">Let's build something <span>great</span> together</h2>
+                    <p class="contact-info-desc" data-i18n="contact.desc">Have a project in mind? Looking for a collaborator? Or just want to connect? My inbox is always open.</p>
                     <a href="mailto:pablorios1603@gmail.com" class="contact-link">
                         <i class="fa-solid fa-envelope"></i> pablorios1603@gmail.com
                     </a>
@@ -219,19 +234,19 @@
                 <div class="reveal reveal-delay-2">
                     <form id="contact-form">
                         <div class="form-group">
-                            <label>Email Address</label>
-                            <input type="email" name="email" required placeholder="you@example.com">
+                            <label data-i18n="contact.form.email">Email Address</label>
+                            <input type="email" name="email" required data-i18n-placeholder="contact.form.email_ph" placeholder="you@example.com">
                         </div>
                         <div class="form-group">
-                            <label>Subject</label>
-                            <input type="text" name="asunto" required placeholder="Project proposal">
+                            <label data-i18n="contact.form.subject">Subject</label>
+                            <input type="text" name="asunto" required data-i18n-placeholder="contact.form.subject_ph" placeholder="Project proposal">
                         </div>
                         <div class="form-group">
-                            <label>Message</label>
-                            <textarea name="mensaje" required placeholder="Tell me about your project..."></textarea>
+                            <label data-i18n="contact.form.message">Message</label>
+                            <textarea name="mensaje" required data-i18n-placeholder="contact.form.message_ph" placeholder="Tell me about your project..."></textarea>
                         </div>
                         <div class="form-status" id="form-status"></div>
-                        <button type="submit" class="form-submit" id="form-submit-btn">
+                        <button type="submit" class="form-submit" id="form-submit-btn" data-i18n="contact.form.send">
                             Send Message <i class="fa-solid fa-paper-plane"></i>
                         </button>
                     </form>
