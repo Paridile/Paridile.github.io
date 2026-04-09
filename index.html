@@ -24,7 +24,6 @@
             <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
         </div>
 
-        <!-- Language selector -->
         <div id="lang-switcher">
             <button class="lang-btn active" data-lang="en">EN</button>
             <span class="lang-sep">|</span>
@@ -33,34 +32,43 @@
             <button class="lang-btn" data-lang="es">ES</button>
         </div>
 
-        <!-- Theme toggle -->
         <button id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
             <i class="fa-solid fa-sun" id="theme-icon-sun"></i>
             <i class="fa-solid fa-moon" id="theme-icon-moon"></i>
         </button>
     </nav>
 
-    <section id="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-grid"></div>
-        <div class="hero-inner">
-            <div class="hero-badge" data-i18n="hero.badge">Available for new projects</div>
-            <h1 class="hero-name">Pablo Ríos Díaz</h1>
-            <div class="hero-title" data-i18n="hero.title">Computer Engineer</div>
-            <p class="hero-desc" data-i18n="hero.desc">
-                I build <strong>scalable systems</strong> and clean architectures. Passionate about performance engineering, distributed systems, and turning complex technical challenges into elegant, maintainable software.
-            </p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn-primary" data-i18n="hero.cta">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="https://github.com/paridile" target="_blank" class="btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/pablo-rios-diaz/" target="_blank" class="btn-ghost"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            </div>
+<section id="hero">
+    <div class="hero-bg"></div>
+    
+    <!-- Nuevo diseño creativo: nodos flotantes -->
+    <div class="hero-decor">
+        <div class="node node-1"></div>
+        <div class="node node-2"></div>
+        <div class="node node-3"></div>
+        <div class="node node-4"></div>
+        <div class="node node-5"></div>
+        <div class="node node-6"></div>
+        <div class="node node-7"></div>
+        <div class="node node-8"></div>
+    </div>
+
+    <div class="hero-inner">
+        <div class="hero-badge" data-i18n="hero.badge">Available for new projects</div>
+        <h1 class="hero-name">Pablo Ríos Díaz</h1>
+        <div class="hero-title" data-i18n="hero.title">Computer Engineer</div>
+        <p class="hero-desc" data-i18n="hero.desc">
+            I build <strong>scalable systems</strong> and clean architectures. Passionate about performance engineering, distributed systems, and turning complex technical challenges into elegant, maintainable software.
+        </p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn-primary" data-i18n="hero.cta">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/paridile" target="_blank" class="btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/pablo-rios-diaz/" target="_blank" class="btn-ghost"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </div>
-        <div class="hero-scroll">
-            <div class="hero-scroll-line"></div>
-            <span data-i18n="hero.scroll">Scroll</span>
-        </div>
-    </section>
+    </div>
+    
+
+</section>
 
     <section id="award" style="padding: 5rem 2.5rem;">
         <div class="section-inner">
@@ -176,15 +184,13 @@
                     </div>
                 </div>
 
-
-
             </div>
         </div>
     </section>
 
     <section id="tools">
         <div class="marquee-label" data-i18n="tools.label">Development Environment</div>
-        <div style="overflow: hidden;">
+        <div style="overflow: hidden; width: 100%;">
             <div class="marquee-track">
                 <div class="tool-item"><i class="fa-solid fa-code"></i> VS Code</div>
                 <div class="tool-item"><i class="fa-brands fa-java"></i> IntelliJ IDEA</div>
