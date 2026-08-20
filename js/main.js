@@ -177,8 +177,13 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 				var $form = $(form);
 				var $button = $form.find('button[type="submit"]');
 				var originalText = $button.text();
+				
+				var currentLang = localStorage.getItem('portfolio-lang') || 'en';
+				var sendingText = (translations[currentLang] && translations[currentLang]["contact-btn-sending"]) || "Sending...";
+				var sentText = (translations[currentLang] && translations[currentLang]["contact-btn-sent"]) || "Message Sent!";
+				var errorText = (translations[currentLang] && translations[currentLang]["contact-btn-error"]) || "Error. Please try again.";
 
-				$button.prop('disabled', true).text('Sending...');
+				$button.prop('disabled', true).text(sendingText);
 
 				$.ajax({
 					url: $form.attr('action'),
@@ -186,14 +191,14 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 					data: $form.serialize(),
 					dataType: 'json',
 					success: function() {
-						$button.text('Message Sent!');
+						$button.text(sentText);
 						$form.trigger('reset');
 						setTimeout(function() {
 							$button.prop('disabled', false).text(originalText);
 						}, 4000);
 					},
 					error: function() {
-						$button.text('Error. Please try again.');
+						$button.text(errorText);
 						setTimeout(function() {
 							$button.prop('disabled', false).text(originalText);
 						}, 4000);
@@ -201,4 +206,35 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 				});
 			}
 		});
+	});
+
+	window.changeLanguage = function(lang) {
+		if (typeof translations === 'undefined' || !translations[lang]) return;
+		
+		localStorage.setItem('portfolio-lang', lang);
+		
+		// Translate text content
+		$('[data-translate]').each(function() {
+			var key = $(this).data('translate');
+			if (translations[lang][key]) {
+				$(this).html(translations[lang][key]);
+			}
+		});
+
+		// Translate placeholders
+		$('[data-translate-placeholder]').each(function() {
+			var key = $(this).data('translate-placeholder');
+			if (translations[lang][key]) {
+				$(this).attr('placeholder', translations[lang][key]);
+			}
+		});
+
+		// Highlight active language selection in both cloned nav and primary nav
+		$('.language-selector-item').removeClass('active');
+		$('.language-selector-item-' + lang).addClass('active');
+	};
+
+	$(document).ready(function() {
+		var savedLang = localStorage.getItem('portfolio-lang') || 'en';
+		window.changeLanguage(savedLang);
 	});

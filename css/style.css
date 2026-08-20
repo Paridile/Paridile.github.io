@@ -859,3 +859,103 @@ a:hover {
     padding-bottom: 4.5rem;
   }
 }
+
+/* Navbar Dropdown styling */
+.site-navbar .site-navigation .site-menu .has-children {
+  position: relative;
+}
+
+.site-navbar .site-navigation .site-menu .has-children > a {
+  position: relative;
+  padding-right: 25px;
+}
+
+/* Arrow indicator icon */
+.site-navbar .site-navigation .site-menu .has-children > a:after {
+  position: absolute;
+  content: "\e313"; /* icomoon keyboard_arrow_down */
+  font-family: 'icomoon' !important;
+  font-size: 14px;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.site-navbar .site-navigation .site-menu .has-children:hover > a:after {
+  transform: translateY(-50%) rotate(180deg);
+  color: var(--primary-color);
+}
+
+.site-navbar .site-navigation .site-menu .has-children .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  top: 100%;
+  position: absolute;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  padding: 8px 0;
+  margin-top: 15px;
+  margin-left: 0px;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.25s all cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.site-navbar .site-navigation .site-menu .has-children:hover > .dropdown,
+.site-navbar .site-navigation .site-menu .has-children:focus > .dropdown,
+.site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
+  margin-top: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.site-navbar .site-navigation .site-menu .has-children .dropdown > li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+}
+
+.site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: all 0.25s ease;
+}
+
+.site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary-color) !important;
+  padding-left: 24px;
+}
+
+.site-navbar .site-navigation .site-menu .has-children .dropdown > li > a.active {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+/* Mobile Menu dropdown arrow positioning and styles */
+.site-mobile-menu .site-nav-wrap .dropdown {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+}
+
+.site-mobile-menu .site-nav-wrap .has-children.active > .dropdown {
+  display: block;
+}
+
+.site-mobile-menu .site-nav-wrap .dropdown > li > a {
+  padding-left: 40px !important;
+  font-size: 0.95rem;
+}
+
+.site-mobile-menu .site-nav-wrap .has-children > a:after {
+  display: none !important; /* Hide desktop arrow icon on mobile menu */
+}
