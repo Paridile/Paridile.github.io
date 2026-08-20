@@ -171,5 +171,34 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 
 
 	$(document).ready(function() {
-		$("#formulario").validate();
-	  });
+		$("#formulario").validate({
+			submitHandler: function(form, event) {
+				event.preventDefault();
+				var $form = $(form);
+				var $button = $form.find('button[type="submit"]');
+				var originalText = $button.text();
+
+				$button.prop('disabled', true).text('Sending...');
+
+				$.ajax({
+					url: $form.attr('action'),
+					method: 'POST',
+					data: $form.serialize(),
+					dataType: 'json',
+					success: function() {
+						$button.text('Message Sent!');
+						$form.trigger('reset');
+						setTimeout(function() {
+							$button.prop('disabled', false).text(originalText);
+						}, 4000);
+					},
+					error: function() {
+						$button.text('Error. Please try again.');
+						setTimeout(function() {
+							$button.prop('disabled', false).text(originalText);
+						}, 4000);
+					}
+				});
+			}
+		});
+	});
