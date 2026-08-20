@@ -1,277 +1,594 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="dark">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pablo Ríos Díaz | Computer Engineer</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="icon" href="./images/favicon.ico"/>
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Pablo Ríos Díaz | Backend Software Developer</title>
 </head>
+
 <body>
+  <!-- Mobile Navigation Menu -->
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close pt-3">
+        <span class="icon-close"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-    <nav id="navbar">
-        <a href="#hero" class="nav-logo">
-            <img src="./images/logo.png" alt="Logo" style="height:20px;width:auto;object-fit:contain;vertical-align:middle;margin-right:0.5rem;">Pablo<span>RíosDíaz</span>.
+  <!-- Navigation Header -->
+  <div class="site-navbar-wrap">
+    <div class="site-navbar-top">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-6">
+          </div>
+          <div class="col-6 text-right">
+            <div class="social-links-top">
+              <a target="_blank" href="https://www.linkedin.com/in/josé-pablo-ríos-díaz-de-león-571953211/"
+                class="p-2 pl-0 linkedin-icon-effect" aria-label="LinkedIn">
+                <span class="icon-linkedin"></span>
+              </a>
+              <a target="_blank" href="https://www.github.com/paridile" class="p-2 pl-0 github-icon-effect"
+                aria-label="GitHub">
+                <span class="icon-github"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-navbar site-navbar-target js-sticky-header sticky-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-3 col-md-2">
+            <a href="#" class="logo-wrap">
+              <img src="./images/logo.png" alt="Pablo Ríos Díaz Logo" class="logo pt-1">
+            </a>
+          </div>
+          <div class="col-9 col-md-10">
+            <nav class="site-navigation text-right" role="navigation">
+              <div class="container">
+                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
+                  <a href="#" class="site-menu-toggle js-menu-toggle text-white" aria-label="Toggle menu">
+                    <span class="icon-menu h3"></span>
+                  </a>
+                </div>
+                <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                  <li class="active">
+                    <a href="#" class="nav-link" data-translate="nav-home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about-me" class="nav-link" data-translate="nav-about">About me</a>
+                  </li>
+                  <li>
+                    <a href="#experience" class="nav-link" data-translate="nav-experience">Experience</a>
+                  </li>
+                  <li>
+                    <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
+                  </li>
+                  <li>
+                    <a href="#tools" class="nav-link" data-translate="nav-tools">Tools</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a>
+                  </li>
+                  <li class="has-children language-selector">
+                    <a class="nav-link" data-translate="nav-language"><span class="icon-globe mr-1"></span> Language</a>
+                    <ul class="dropdown arrow-top">
+                      <li><a href="#" class="language-selector-item language-selector-item-en"
+                          onclick="changeLanguage('en'); return false;">English</a></li>
+                      <li><a href="#" class="language-selector-item language-selector-item-fr"
+                          onclick="changeLanguage('fr'); return false;">Français</a></li>
+                      <li><a href="#" class="language-selector-item language-selector-item-es"
+                          onclick="changeLanguage('es'); return false;">Español</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="main-background m-0">
+    <div class="row m-0 align-items-center">
+      <!-- Interactive Terminal Card Column -->
+      <div class="col-lg-6 d-lg-flex d-none text-white justify-content-center align-items-center">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">pablo-rios-diaz.sh</span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line"><span class="terminal-prompt">></span> pablo.getCurrentRole()</p>
+            <p class="terminal-response" data-translate="terminal-role-comment">"Custom Software Engineering Sr Analyst
+              at Accenture"
+            </p>
+            <p class="terminal-line"><span class="terminal-prompt">></span> pablo.getCoreTech()</p>
+            <p class="terminal-response" data-translate="terminal-tech-comment">["Java", "Spring Boot", "Apache Spark",
+              "Oracle"]</p>
+            <p class="terminal-line"><span class="terminal-prompt">></span> pablo.getContactEmail()</p>
+            <p class="terminal-response">"pablorios1603@gmail.com"</p>
+            <p class="terminal-line"><span class="terminal-prompt">></span> <span
+                data-translate="terminal-touch-comment">click here to get in touch </span><a href="#contact"
+                class="aqui">email</a><span class="cursor">_</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Details Column -->
+      <div class="col-lg-6 col-12 text-white">
+        <div class="row p-0 m-0 justify-content-center align-items-center">
+          <div class="col-auto px-4 px-md-5 text-center text-lg-left hero-text-container">
+            <p class="hero-pretitle" data-translate="hero-pretitle">Hi, I'm</p>
+            <h1 class="display-3 hero-title text-white">Pablo Ríos Díaz</h1>
+            <p class="hero-subtitle text-white" data-translate="hero-subtitle">
+              Computer Engineer
+            </p>
+            <p class="hero-desc d-lg-block d-none" data-translate="hero-desc">
+              Specializing in robust backend services, high-throughput batch processes, and distributed data solutions.
+            </p>
+            <div class="pt-4">
+              <a href="#contact">
+                <button class="blur boton-contacto" data-translate="hero-btn">Get in touch</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="container-fluid bg-gray-2 py-6">
+    <div class="container py-4">
+      <div class="section-header text-center mb-5">
+        <h2 class="display-4 title-color" data-translate="about-title">About me</h2>
+        <div class="accent-bar mx-auto"></div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-10 mx-auto">
+          <div class="about-text text-white lead text-justify">
+            <p data-translate="about-p1">I’m a <strong>Computer Engineer specialized in backend development</strong>,
+              with 5+ years of professional experience building, maintaining, and optimizing enterprise software
+              solutions.</p>
+
+            <p data-translate="about-p2">My main expertise is in <strong>Java, Spring Boot, Apache Spark, REST APIs, and
+                data processing</strong>, with experience designing backend services and distributed processing
+              solutions for large-scale financial systems. I have worked in enterprise environments where performance,
+              reliability, scalability, clean architecture, and maintainability are critical.</p>
+
+            <p data-translate="about-p3">Throughout my career, I have worked on projects involving <strong>millions of
+                records and high-volume data processing</strong>, developing batch and distributed processing solutions
+              using technologies such as <strong>Apache Spark, Spring Batch, Oracle, MongoDB, Elasticsearch, SQL Server,
+                DB2, and Teradata</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <!-- What I Do -->
+        <div class="col-md-6 mb-4">
+          <div class="rounded-card p-4 h-100">
+            <h3 class="h4 text-green mb-3" data-translate="what-title"><span class="icon-gears mr-2"></span>What I Do
+            </h3>
+            <p class="text-muted text-justify" data-translate="what-p1">I specialize in transforming complex business
+              requirements into reliable and scalable backend solutions. I enjoy solving performance and data-processing
+              challenges, improving existing systems, designing APIs, and working with large datasets.</p>
+            <p class="text-muted text-justify" data-translate="what-p2">I have experience working on <strong>financial
+                and enterprise applications</strong>, collaborating with international teams and contributing to systems
+              where data accuracy, security, and performance are essential.</p>
+            <p class="text-muted text-justify mb-0" data-translate="what-p3">I also have experience taking technical
+              leadership responsibilities, including supporting development teams, defining technical solutions,
+              troubleshooting complex issues, and helping establish development practices.</p>
+          </div>
+        </div>
+        <!-- Engineering Approach -->
+        <div class="col-md-6 mb-4">
+          <div class="rounded-card p-4 h-100">
+            <h3 class="h4 text-green mb-3" data-translate="eng-title"><span class="icon-wrench mr-2"></span>Engineering
+              Approach</h3>
+            <p class="text-muted text-justify" data-translate="eng-p1">I believe good software should be <strong>simple,
+                maintainable, scalable, and measurable</strong>. My approach combines analytical problem-solving with
+              practical engineering, focusing not only on making a system work, but also on understanding how it will
+              perform and evolve over time.</p>
+            <p class="text-muted text-justify mb-0" data-translate="eng-p2">I’m particularly interested in
+              <strong>backend engineering, distributed systems, data-intensive applications, and software
+                architecture</strong>, and I continuously work on expanding my knowledge of modern technologies and
+              engineering practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container-fluid bg-gray py-6">
+    <div class="container py-4">
+      <div class="section-header text-center mb-5">
+        <h2 class="display-4 title-color" data-translate="exp-title">Experience</h2>
+        <div class="accent-bar mx-auto"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="timeline-container">
+            <!-- Accenture Role Card -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content rounded-card">
+                <div
+                  class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3">
+                  <div>
+                    <h3 class="role-title text-white mb-1" data-translate="exp-role">Custom Software Engineering Sr
+                      Analyst</h3>
+                    <h4 class="company-title text-green mb-0">Accenture</h4>
+                  </div>
+                  <span class="badge badge-accent mt-2 mt-md-0 px-3 py-2" data-translate="exp-present">Present</span>
+                </div>
+                <p class="lead-text text-muted mb-4" data-translate="exp-timeline-subtitle">Working on backend systems
+                  for an international banking client.</p>
+
+                <h5 class="text-white mb-3" data-translate="exp-responsibilities-title">Main responsibilities:</h5>
+                <ul class="custom-list">
+                  <li data-translate="exp-resp-1">Developing backend applications using Java and Spring Boot.</li>
+                  <li data-translate="exp-resp-2">Designing and maintaining REST APIs.</li>
+                  <li data-translate="exp-resp-3">Developing batch processes using Spring Batch.</li>
+                  <li data-translate="exp-resp-4">Processing large datasets using Apache Spark.</li>
+                  <li data-translate="exp-resp-5">Working with Oracle, MongoDB, and Elasticsearch.</li>
+                  <li data-translate="exp-resp-6">Troubleshooting and improving application performance.</li>
+                  <li data-translate="exp-resp-7">Working with Git, Jenkins, SonarQube, and Control-M.</li>
+                  <li data-translate="exp-resp-8">Collaborating with international development teams.</li>
+                  <li data-translate="exp-resp-9">Supporting technical solutions and helping solve complex development
+                    issues.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <div id="skills" class="container-fluid bg-gray-2 py-6">
+    <div class="container py-4">
+      <div class="section-header text-center mb-5">
+        <h2 class="display-4 title-color" data-translate="skills-title">Technical Expertise</h2>
+        <div class="accent-bar mx-auto"></div>
+      </div>
+
+      <!-- Highlight Core Tech Badges with Logos -->
+      <h3 class="h4 text-white mb-4 text-center text-lg-left" data-translate="skills-primary-header">Primary Tech Stack
+      </h3>
+      <div class="row text-center mb-5 justify-content-center">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-logo-card">
+            <a target="_blank" href="https://docs.oracle.com/en/java/">
+              <div class="logo-box"><img src="./images/java.png" alt="Java Logo"></div>
+              <span class="logo-name">Java</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-logo-card">
+            <a target="_blank" href="https://docs.spring.io/spring-framework/docs/current/reference/html/">
+              <div class="logo-box"><img src="./images/spring.png" alt="Spring Boot Logo"></div>
+              <span class="logo-name">Spring Boot</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-logo-card">
+            <a target="_blank" href="https://dev.mysql.com/doc/">
+              <div class="logo-box"><img src="./images/mysql.png" alt="SQL Logo" style="max-height: 40px;"></div>
+              <span class="logo-name">SQL</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-logo-card">
+            <a target="_blank" href="https://docs.oracle.com/en/database/">
+              <div class="logo-box"><img src="./images/oracle.png" alt="Oracle Logo"></div>
+              <span class="logo-name">Oracle</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-logo-card">
+            <a target="_blank" href="https://www.mongodb.com/docs/">
+              <div class="logo-box"><img src="./images/mongo.png" alt="MongoDB Logo"></div>
+              <span class="logo-name">MongoDB</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+          <div class="skill-logo-card">
+            <a target="_blank" href="https://www.elastic.co/guide/index.html">
+              <div class="logo-box"><img src="./images/elastic.png" alt="Elasticsearch Logo"></div>
+              <span class="logo-name">Elasticsearch</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categorized Skill Grid -->
+      <h3 class="h4 text-white mb-4 text-center text-lg-left" data-translate="skills-directory-header">Technical
+        Expertise Directory</h3>
+      <div class="row">
+        <!-- Languages -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="category-card rounded-card h-100">
+            <h4 class="category-title text-green"><span class="icon-code mr-2"></span><span
+                data-translate="skills-cat-languages">Languages</span></h4>
+            <div class="badge-container">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">C/C++</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Bash</span>
+            </div>
+          </div>
+        </div>
+        <!-- Backend -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="category-card rounded-card h-100">
+            <h4 class="category-title text-green"><span class="icon-gears mr-2"></span><span
+                data-translate="skills-cat-backend">Backend</span></h4>
+            <div class="badge-container">
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">Spring Batch</span>
+              <span class="tech-badge">REST APIs</span>
+              <span class="tech-badge">Microservices</span>
+            </div>
+          </div>
+        </div>
+        <!-- Big Data & Processing -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="category-card rounded-card h-100">
+            <h4 class="category-title text-green"><span class="icon-signal mr-2"></span><span
+                data-translate="skills-cat-bigdata">Big Data & Processing</span></h4>
+            <div class="badge-container">
+              <span class="tech-badge">Apache Spark</span>
+              <span class="tech-badge">Dataset API</span>
+              <span class="tech-badge">Distributed Data Processing</span>
+              <span class="tech-badge">Batch Processing</span>
+            </div>
+          </div>
+        </div>
+        <!-- Databases -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="category-card rounded-card h-100">
+            <h4 class="category-title text-green"><span class="icon-database mr-2"></span><span
+                data-translate="skills-cat-databases">Databases</span></h4>
+            <div class="badge-container">
+              <span class="tech-badge">Oracle</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Elasticsearch</span>
+              <span class="tech-badge">SQL Server</span>
+              <span class="tech-badge">DB2</span>
+              <span class="tech-badge">Teradata</span>
+            </div>
+          </div>
+        </div>
+        <!-- DevOps & Tools -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="category-card rounded-card h-100">
+            <h4 class="category-title text-green"><span class="icon-wrench mr-2"></span><span
+                data-translate="skills-cat-devops">DevOps & Tools</span></h4>
+            <div class="badge-container">
+              <span class="tech-badge">Git</span>
+              <span class="tech-badge">GitHub</span>
+              <span class="tech-badge">Jenkins</span>
+              <span class="tech-badge">SonarQube</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Control-M</span>
+            </div>
+          </div>
+        </div>
+        <!-- Architecture & Integration -->
+        <div class="col-md-6 col-lg-8 mb-4">
+          <div class="category-card rounded-card h-100">
+            <h4 class="category-title text-green"><span class="icon-sitemap mr-2"></span><span
+                data-translate="skills-cat-architecture">Architecture, Data & Integration</span></h4>
+            <div class="badge-container">
+              <span class="tech-badge">RESTful Services</span>
+              <span class="tech-badge">Microservices Architecture</span>
+              <span class="tech-badge">Batch Architectures</span>
+              <span class="tech-badge">Distributed Processing</span>
+              <span class="tech-badge">JSON</span>
+              <span class="tech-badge">XML</span>
+              <span class="tech-badge">SOAP</span>
+              <span class="tech-badge">WSDL</span>
+              <span class="tech-badge">COBOL/EBCDIC Processing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools Carousel Section -->
+  <section id="tools" class="container-fluid bg-gray py-6">
+    <div class="container py-4">
+      <div class="section-header text-center mb-5">
+        <h2 class="display-4 title-color" data-translate="tools-title">Development Ecosystem</h2>
+        <div class="accent-bar mx-auto"></div>
+      </div>
+      <div class="owl-carousel bg-gray py-4">
+        <a target="_blank" href="https://docs.spring.io/spring-framework/docs/current/reference/html/">
+          <div class="carousel-logo-item"><img src="./images/spring.png" alt="Spring Framework"
+              title="Spring Framework"></div>
         </a>
-        <div class="nav-links">
-            <a href="#award" data-i18n="nav.awards">Awards</a>
-            <a href="#stack" data-i18n="nav.stack">Stack</a>
-            <a href="#tools" data-i18n="nav.tools">Tools</a>
-            <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
-        </div>
-
-        <div id="lang-switcher">
-            <button class="lang-btn active" data-lang="en">EN</button>
-            <span class="lang-sep">|</span>
-            <button class="lang-btn" data-lang="fr">FR</button>
-            <span class="lang-sep">|</span>
-            <button class="lang-btn" data-lang="es">ES</button>
-        </div>
-
-        <button id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
-            <i class="fa-solid fa-sun" id="theme-icon-sun"></i>
-            <i class="fa-solid fa-moon" id="theme-icon-moon"></i>
-        </button>
-    </nav>
-
-<section id="hero">
-    <div class="hero-bg"></div>
-    
-    <!-- Nuevo diseño creativo: nodos flotantes -->
-    <div class="hero-decor">
-        <div class="node node-1"></div>
-        <div class="node node-2"></div>
-        <div class="node node-3"></div>
-        <div class="node node-4"></div>
-        <div class="node node-5"></div>
-        <div class="node node-6"></div>
-        <div class="node node-7"></div>
-        <div class="node node-8"></div>
+        <a target="_blank" href="https://code.visualstudio.com/docs">
+          <div class="carousel-logo-item"><img src="./images/vscode.png" alt="VS Code" title="VS Code"></div>
+        </a>
+        <a target="_blank" href="https://learn.microsoft.com/en-us/visualstudio/windows/?view=vs-2022">
+          <div class="carousel-logo-item"><img src="./images/visualstudio.png" alt="Visual Studio"
+              title="Visual Studio"></div>
+        </a>
+        <a target="_blank" href="https://netbeans.apache.org/">
+          <div class="carousel-logo-item"><img src="./images/netbeans.png" alt="NetBeans" title="NetBeans"></div>
+        </a>
+        <a target="_blank" href="https://www.jetbrains.com/idea/">
+          <div class="carousel-logo-item"><img src="./images/intellij.png" alt="IntelliJ IDEA" title="IntelliJ IDEA">
+          </div>
+        </a>
+        <a target="_blank" href="https://www.jetbrains.com/datagrip/">
+          <div class="carousel-logo-item"><img src="./images/datagrip.png" alt="DataGrip" title="DataGrip"></div>
+        </a>
+        <a target="_blank" href="https://www.jetbrains.com/clion/">
+          <div class="carousel-logo-item"><img src="./images/clion.png" alt="CLion" title="CLion"></div>
+        </a>
+        <a target="_blank" href="https://www.mysql.com/products/workbench/">
+          <div class="carousel-logo-item"><img src="./images/workbench.jpg" alt="MySQL Workbench"
+              title="MySQL Workbench"></div>
+        </a>
+        <a target="_blank" href="https://tailwindcss.com/">
+          <div class="carousel-logo-item"><img src="./images/tailwind.png" alt="Tailwind CSS" title="Tailwind CSS">
+          </div>
+        </a>
+        <a target="_blank" href="https://getbootstrap.com/">
+          <div class="carousel-logo-item"><img src="./images/bootstrap.png" alt="Bootstrap" title="Bootstrap"></div>
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="hero-inner">
-        <div class="hero-badge" data-i18n="hero.badge">Available for new projects</div>
-        <h1 class="hero-name">Pablo Ríos Díaz</h1>
-        <div class="hero-title" data-i18n="hero.title">Computer Engineer</div>
-        <p class="hero-desc" data-i18n="hero.desc">
-            I build <strong>scalable systems</strong> and clean architectures. Passionate about performance engineering, distributed systems, and turning complex technical challenges into elegant, maintainable software.
-        </p>
-        <div class="hero-actions">
-            <a href="#contact" class="btn-primary" data-i18n="hero.cta">Let's Work Together <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="https://github.com/paridile" target="_blank" class="btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/pablo-rios-diaz/" target="_blank" class="btn-ghost"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  <!-- Contact Section -->
+  <section id="contact" class="container-fluid bg-gray-2 py-6">
+    <div class="container py-4">
+      <div class="section-header text-center mb-5">
+        <h2 class="title-color display-4" data-translate="contact-title">Contact me</h2>
+        <div class="accent-bar mx-auto"></div>
+      </div>
+      <div class="row">
+        <!-- Currently Column -->
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="rounded-card p-5 h-100 d-flex flex-column justify-content-center">
+            <h3 class="h4 text-green mb-4" data-translate="currently-title"><span
+                class="icon-briefcase mr-2"></span>Currently</h3>
+            <p class="text-white lead mb-3" data-translate="currently-location">Based in <strong>Canada</strong></p>
+            <p class="text-muted text-justify" data-translate="currently-desc-1">I’m interested in opportunities where I
+              can contribute as a <strong>Backend Software Developer</strong>, particularly in teams
+              working with <strong>Java, Spring Boot, distributed systems, data engineering, or large-scale
+                applications</strong>.</p>
+            <p class="text-muted text-justify mb-0" data-translate="currently-desc-2">I’m comfortable working in
+              international and remote environments and enjoy collaborating with engineers from different backgrounds.
+            </p>
+          </div>
         </div>
+        <!-- Contact Form Column -->
+        <div class="col-lg-7">
+          <div class="contact-card-container rounded-card p-5">
+            <h3 class="h4 text-white text-center mb-4" data-translate="contact-collaborate">Let's collaborate!</h3>
+            <p class="text-muted text-center mb-5"><span data-translate="contact-subtitle">Drop me a message using the
+                form below, or send an email directly to </span><a href="mailto:pablorios1603@gmail.com"
+                class="text-green font-weight-bold">pablorios1603@gmail.com</a>.</p>
+
+            <form id="formulario" action="https://formspree.io/f/xrgrkpgv" name="formulario" method="POST">
+              <div class="form-group pb-3">
+                <label for="email" class="form-label text-white" data-translate="contact-label-email">Email
+                  Address</label>
+                <input type="email" name="email" required minlength="5" class="form-control custom-input" id="email"
+                  aria-describedby="email" placeholder="name@example.com"
+                  data-translate-placeholder="contact-placeholder-email">
+              </div>
+              <div class="form-group pb-3">
+                <label for="asunto" class="form-label text-white" data-translate="contact-label-subject">Subject</label>
+                <input type="text" name="asunto" required minlength="1" class="form-control custom-input" id="asunto"
+                  placeholder="Subject of your message" data-translate-placeholder="contact-placeholder-subject">
+              </div>
+              <div class="form-group pb-4">
+                <label for="mensaje" class="form-label text-white"
+                  data-translate="contact-label-message">Message</label>
+                <textarea class="form-control custom-input no-resize" name="mensaje" required minlength="1" id="mensaje"
+                  rows="6" placeholder="Your message details here..."
+                  data-translate-placeholder="contact-placeholder-message"></textarea>
+              </div>
+              <div class="text-center pt-2">
+                <button type="submit" class="boton-contacto w-100 py-3" data-translate="contact-btn-send">Send
+                  Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    
+  </section>
 
-</section>
+  <!-- Footer -->
+  <footer class="container-fluid footer py-5">
+    <div class="container text-center">
+      <div class="footer-social-links mb-4">
+        <a target="_blank" href="https://www.linkedin.com/in/josé-pablo-ríos-díaz-de-león-571953211/"
+          class="mx-3 text-white linkedin-icon-effect" aria-label="LinkedIn">
+          <span class="icon-linkedin h4"></span>
+        </a>
+        <a target="_blank" href="https://www.github.com/paridile" class="mx-3 text-white github-icon-effect"
+          aria-label="GitHub">
+          <span class="icon-github h4"></span>
+        </a>
+      </div>
+      <p class="text-muted mt-2" data-translate="footer-rights">&copy; 2021-2026 Pablo Ríos Díaz. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
-    <section id="award" style="padding: 5rem 2.5rem;">
-        <div class="section-inner">
-            <div class="award-card reveal">
-                <div class="award-icon">&#127942;</div>
-                <div>
-                    <div class="award-title" data-i18n="award.title">Academic Excellence Award</div>
-                    <p class="award-desc" data-i18n="award.desc">
-                        Recognized as the student with the <strong>most outstanding academic trajectory</strong> of the generation at the Autonomous Mexico State University (UAEMex).
-                    </p>
-                </div>
-                <div class="award-badge">#1</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="stack">
-        <div class="section-inner">
-            <div class="section-label reveal" data-i18n="stack.label">Technical Proficiency</div>
-            <h2 class="section-heading reveal reveal-delay-1" style="margin-bottom: 3rem;" data-i18n="stack.heading">My Engineering Stack</h2>
-
-            <div class="stack-grid">
-                <div class="stack-panel wide reveal">
-                    <div class="stack-panel-head">
-                        <div class="stack-panel-icon"><i class="fa-solid fa-layer-group"></i></div>
-                        <div>
-                            <div class="stack-panel-title" data-i18n="stack.fw.title">Frameworks &amp; Libraries</div>
-                            <div class="stack-panel-subtitle" data-i18n="stack.fw.sub">Productivity toolbelt</div>
-                        </div>
-                    </div>
-                    <div class="skill-grid">
-                        <span class="skill-pill"><span class="dot dot-green"></span>Spring Framework</span>
-                        <span class="skill-pill"><span class="dot dot-yellow"></span>Apache spark</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>Quasar</span>
-                        <span class="skill-pill"><span class="dot dot-yellow"></span>jQuery</span>
-                        <span class="skill-pill"><span class="dot dot-pink"></span>GraphQL</span>
-                        <span class="skill-pill"><span class="dot dot-white"></span>REST APIs</span>
-                        <span class="skill-pill"><span class="dot dot-purple"></span>WebSockets</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>gRPC</span>
-                        <span class="skill-pill"><span class="dot dot-accent"></span>Tailwind CSS</span>
-                        <span class="skill-pill"><span class="dot dot-purple"></span>Bootstrap</span>
-                    </div>
-                </div>
-                <div class="stack-panel reveal">
-                    <div class="stack-panel-head">
-                        <div class="stack-panel-icon"><i class="fa-solid fa-microchip"></i></div>
-                        <div>
-                            <div class="stack-panel-title" data-i18n="stack.core.title">Core &amp; Backend</div>
-                            <div class="stack-panel-subtitle" data-i18n="stack.core.sub">Systems &amp; server-side</div>
-                        </div>
-                    </div>
-                    <div class="skill-grid">
-                        <span class="skill-pill"><span class="dot dot-orange"></span>Java</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>C</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>C++</span>                        
-                        <span class="skill-pill"><span class="dot dot-green"></span>Bash</span>
-                    </div>
-                </div>
-
-                <div class="stack-panel reveal reveal-delay-1">
-                    <div class="stack-panel-head">
-                        <div class="stack-panel-icon"><i class="fa-solid fa-globe"></i></div>
-                        <div>
-                            <div class="stack-panel-title" data-i18n="stack.web.title">Web Technologies</div>
-                            <div class="stack-panel-subtitle" data-i18n="stack.web.sub">Frontend &amp; web stack</div>
-                        </div>
-                    </div>
-                    <div class="skill-grid">
-                        <span class="skill-pill"><span class="dot dot-green"></span>Vue.js</span>
-                        <span class="skill-pill"><span class="dot dot-yellow"></span>JavaScript</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>TypeScript</span>
-                        <span class="skill-pill"><span class="dot dot-orange"></span>HTML5</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>CSS3</span>
-                        <span class="skill-pill"><span class="dot dot-pink"></span>Sass</span>                        
-                    </div>
-                </div>
-
-                <div class="stack-panel reveal">
-                    <div class="stack-panel-head">
-                        <div class="stack-panel-icon"><i class="fa-solid fa-database"></i></div>
-                        <div>
-                            <div class="stack-panel-title" data-i18n="stack.db.title">Databases</div>
-                            <div class="stack-panel-subtitle" data-i18n="stack.db.sub">Storage &amp; search</div>
-                        </div>
-                    </div>
-                    <div class="skill-grid">
-                        <span class="skill-pill"><span class="dot dot-blue"></span>MySQL</span>
-                        <span class="skill-pill"><span class="dot dot-red"></span>Oracle</span>
-                        <span class="skill-pill"><span class="dot dot-green"></span>MongoDB</span>
-                        <span class="skill-pill"><span class="dot dot-yellow"></span>Elasticsearch</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>PostgreSQL</span>
-                    </div>
-                </div>
-
-                <div class="stack-panel reveal reveal-delay-1">
-                    <div class="stack-panel-head">
-                        <div class="stack-panel-icon"><i class="fa-solid fa-cloud"></i></div>
-                        <div>
-                            <div class="stack-panel-title" data-i18n="stack.devops.title">DevOps &amp; Cloud</div>
-                            <div class="stack-panel-subtitle" data-i18n="stack.devops.sub">Infrastructure &amp; deployment</div>
-                        </div>
-                    </div>
-                    <div class="skill-grid">
-                        <span class="skill-pill"><span class="dot dot-blue"></span>Docker</span>
-                        <span class="skill-pill"><span class="dot dot-blue"></span>Kubernetes</span>
-                        <span class="skill-pill"><span class="dot dot-orange"></span>AWS</span>
-                        <span class="skill-pill"><span class="dot dot-green"></span>CI/CD</span>
-                        <span class="skill-pill"><span class="dot dot-white"></span>Git</span>
-                        <span class="skill-pill"><span class="dot dot-white"></span>GitHub Actions</span>
-                        <span class="skill-pill"><span class="dot dot-red"></span>Maven</span>
-                        <span class="skill-pill"><span class="dot dot-orange"></span>Linux</span>
-                        <span class="skill-pill"><span class="dot dot-purple"></span>Terraform</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="tools">
-        <div class="marquee-label" data-i18n="tools.label">Development Environment</div>
-        <div style="overflow: hidden; width: 100%;">
-            <div class="marquee-track">
-                <div class="tool-item"><i class="fa-solid fa-code"></i> VS Code</div>
-                <div class="tool-item"><i class="fa-brands fa-java"></i> IntelliJ IDEA</div>
-                <div class="tool-item"><i class="fa-solid fa-c"></i> CLion</div>
-                <div class="tool-item"><i class="fa-solid fa-database"></i> DataGrip</div>
-                <div class="tool-item"><i class="fa-solid fa-window-maximize"></i> Visual Studio</div>
-                <div class="tool-item"><i class="fa-brands fa-docker"></i> Docker Desktop</div>
-                <div class="tool-item"><i class="fa-brands fa-git-alt"></i> Git</div>
-                <div class="tool-item"><i class="fa-solid fa-terminal"></i> Warp Terminal</div>
-                <div class="tool-item"><i class="fa-solid fa-network-wired"></i> Postman</div>
-                <div class="tool-item"><i class="fa-solid fa-pen-nib"></i> Figma</div>
-                <div class="tool-item"><i class="fa-brands fa-linux"></i> Linux</div>
-                <div class="tool-item"><i class="fa-solid fa-database"></i> MySQL Workbench</div>
-                <div class="tool-item"><i class="fa-solid fa-robot"></i> GitHub Copilot</div>
-                <div class="tool-item"><i class="fa-solid fa-code"></i> VS Code</div>
-                <div class="tool-item"><i class="fa-brands fa-java"></i> IntelliJ IDEA</div>
-                <div class="tool-item"><i class="fa-solid fa-c"></i> CLion</div>
-                <div class="tool-item"><i class="fa-solid fa-database"></i> DataGrip</div>
-                <div class="tool-item"><i class="fa-solid fa-window-maximize"></i> Visual Studio</div>
-                <div class="tool-item"><i class="fa-brands fa-docker"></i> Docker Desktop</div>
-                <div class="tool-item"><i class="fa-brands fa-git-alt"></i> Git</div>
-                <div class="tool-item"><i class="fa-solid fa-terminal"></i> Warp Terminal</div>
-                <div class="tool-item"><i class="fa-solid fa-network-wired"></i> Postman</div>
-                <div class="tool-item"><i class="fa-solid fa-pen-nib"></i> Figma</div>
-                <div class="tool-item"><i class="fa-brands fa-linux"></i> Linux</div>
-                <div class="tool-item"><i class="fa-solid fa-database"></i> MySQL Workbench</div>
-                <div class="tool-item"><i class="fa-solid fa-robot"></i> GitHub Copilot</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="section-inner">
-            <div class="contact-layout">
-                <div class="reveal">
-                    <div class="section-label" data-i18n="contact.label">Get in touch</div>
-                    <h2 class="contact-info-title" data-i18n="contact.title">Let's build something <span>great</span> together</h2>
-                    <p class="contact-info-desc" data-i18n="contact.desc">Have a project in mind? Looking for a collaborator? Or just want to connect? My inbox is always open.</p>
-                    <a href="mailto:contact@pabloriosdiaz.com" class="contact-link">
-                        <i class="fa-solid fa-envelope"></i> contact@pabloriosdiaz.com
-                    </a>
-                    <a href="https://github.com/paridile" target="_blank" class="contact-link">
-                        <i class="fa-brands fa-github"></i> Github
-                    </a>
-                    <a href="https://www.linkedin.com/in/pablo-rios-diaz/" target="_blank" class="contact-link">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-                <div class="reveal reveal-delay-2">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label data-i18n="contact.form.email">Email Address</label>
-                            <input type="email" name="email" required data-i18n-placeholder="contact.form.email_ph" placeholder="you@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label data-i18n="contact.form.subject">Subject</label>
-                            <input type="text" name="asunto" required data-i18n-placeholder="contact.form.subject_ph" placeholder="Project proposal">
-                        </div>
-                        <div class="form-group">
-                            <label data-i18n="contact.form.message">Message</label>
-                            <textarea name="mensaje" required data-i18n-placeholder="contact.form.message_ph" placeholder="Tell me about your project..."></textarea>
-                        </div>
-                        <div class="form-status" id="form-status"></div>
-                        <button type="submit" class="form-submit" id="form-submit-btn" data-i18n="contact.form.send">
-                            Send Message <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <span class="copy">&copy; 2021&ndash;2026 Pablo Ríos Díaz. All rights reserved.</span>
-        <div class="social-row">
-            <a href="https://github.com/paridile" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/pablo-rios-diaz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:contact@pabloriosdiaz.com"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+  <!-- Scripts -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script>
+    var tempModule = window.module;
+    var tempExports = window.exports;
+    var tempDefine = window.define;
+    window.module = undefined;
+    window.exports = undefined;
+    window.define = undefined;
+  </script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script>
+    window.module = tempModule;
+    window.exports = tempExports;
+    window.define = tempDefine;
+  </script>
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
